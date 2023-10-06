@@ -21,11 +21,11 @@ This repository contains the started code to build a fully functional IR system,
 
 ## Documentation
 
-The documentation of the solution adopted for the indexer can be found [here](https://github.com/detiuaveiro/ri2022-assignment1-98497_98039/blob/master/Documentation.md).
+The documentation of the solution adopted for the indexer can be found [here](https://github.com/Danielar0w0/RI/blob/main/First%20Assignment/Documentation.md).
 
 ## Results
 
-The results/statistics obtained for each collection can be found [here](https://github.com/detiuaveiro/ri2022-assignment1-98497_98039/blob/master/indexer_statistics.txt).
+The results/statistics obtained for each collection can be found [here](https://github.com/Danielar0w0/RI/blob/main/First%20Assignment/indexer_statistics.txt).
 
 ## Program Overview
 
@@ -152,7 +152,7 @@ def add_more_options_to_indexer(indexer_parser, indexer_settings_parser, indexer
 We suggest that the students add this code to the [_add_more_options_to_indexer_](https://github.com/detiuaveiro/RI-2022/blob/master/core.py#L16) function and see the differences when running this system. (RUN: `python main.py indexer -h` and `python main.py indexer collections/pubmed_tiny.jsonl pubmedSPIMIindex --tk.minL 2 --tk.stopwords stopw.txt --tk.stemmer a`).
 
 ```
-$ python main.py indexer collections/pubmed_tiny.jsonl pubmedSPIMIindex --tk.minL 2 --tk.stopwords stopw.txt --tk.stemmer a
+$ python main.py indexer collections/pubmed_tiny.jsonl pubmedSPIMIindex --tk.minL 2 --tk.stopw.txt --tk.stemmer a
 init PubMedReader| self.path_to_collection='collections/pubmed_tiny.jsonl'
 init PubMedTokenizer| minL=2, stopwords_path='stopw.txt', stemmer='a'
 PubMedTokenizer also caught the following additional arguments {'multiprocess': 1}

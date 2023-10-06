@@ -104,7 +104,7 @@ To ease the future search process, in the same directory where our **final index
 
 We’ve run our indexer for each one of the provided collections and collected some statistics. The statistics for each collection can be found in the file **indexer_statistics.txt** available at the root of our repository.
 
-[Indexer Statistics](https://github.com/detiuaveiro/ri2022-assignment1-98497_98039/blob/master/indexer_statistics.txt)
+[Indexer Statistics](https://github.com/Danielar0w0/RI/blob/main/First%20Assignment/indexer_statistics.txt)
 
 ## Run Command Example
 
