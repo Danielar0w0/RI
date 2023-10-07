@@ -1,0 +1,28 @@
+Results for pubmed_2022_tiny.jsonl.gz:
+
+❯ python3 main.py indexer collections/pubmed_2022_tiny.jsonl.gz pubmedSPIMIindex --tk.minL 2 --tk.stopwords stopwords.txt --tk.stemmer potterNLTK --indexer.memory_threshold 16 --reader.memory_threshold 8 --indexer.bm25.cache_in_disk
+init PubMedReader| self.path_to_collection='collections/pubmed_2022_tiny.jsonl.gz'
+init PubMedTokenizer| minL=2, stopwords_path='stopwords.txt', stemmer='potterNLTK'
+init SPIMIIndexer| posting_threshold=None, memory_threshold=16
+SPIMIIndexer also caught the following additional arguments {'bm25': {'b': 0.7, 'cache_in_disk': True, 'k1': 1.2}, 'tfidf': {'cache_in_disk': False, 'smart': 'lnc.ltc'}}
+[-] Analysing Documents: Documents Read - 26.3 % out of 145000 document(s); Reserved Memory - 93.8 % 
+[!] Memory Limit Reached. Writing index to disk & dumping memory...
+[-] Analysing Documents: Documents Read - 52.5 % out of 145000 document(s); Reserved Memory - 93.8 % 
+[!] Memory Limit Reached. Writing index to disk & dumping memory...
+[-] Analysing Documents: Documents Read - 78.6 % out of 145000 document(s); Reserved Memory - 93.8 % 
+[!] Memory Limit Reached. Writing index to disk & dumping memory...
+[-] Analysing Documents: Documents Read - 100.0 % out of 145000 document(s); Reserved Memory - 62.5 % 
+
+[!] Starting SPIMI Merge...
+[!] Finished SPIMI Merge!
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+ Indexing Statistics
+
+   Total Indexing time: 177.62s
+   Merging time (Last SPIMI step): 67.07s
+   Number of temporary index segments written to disk: 4
+   Vocabulary Size: 443024 terms 
+   Total index size on disk: 1479223340 bytes
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
